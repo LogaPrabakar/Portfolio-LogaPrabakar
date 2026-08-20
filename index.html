@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>My Portfolio — Cybersecurity Enthusiast & Developer</title>
+    <meta
+      name="description"
+      content="Mobile portfolio app of a student developer and cybersecurity enthusiast: projects, internships, certificates and achievements."
+    />
+    <meta property="og:title" content="My Portfolio — Cybersecurity Enthusiast & Developer" />
+    <meta property="og:description" content="Projects, internships, certificates and achievements in one mobile portfolio." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+         Each <section class="view"> is one "screen" of the app.
+         script.js shows exactly one view at a time (navigateTo).
+         ============================================================ -->
+    <main id="app">
+      <!-- ---------------- HOME ---------------- -->
+      <section class="view" id="view-home" data-view="home">
+        <div class="hero">
+          <div class="avatar-ring">
+            <!-- Replace profile.jpg with your own photo -->
+            <img id="hero-photo" src="/profile.jpg" alt="My profile photo" />
+          </div>
+          <span class="pill">Open to work</span>
+          <h1 id="hero-name">YOUR NAME</h1>
+          <p class="title" id="hero-title"></p>
+          <p class="intro" id="hero-intro"></p>
+          <button class="btn btn-primary btn-block" id="view-work-btn" type="button">View My Work</button>
+        </div>
+
+        <!-- Portfolio menu (small navigation cards) -->
+        <div class="menu" id="portfolio-menu">
+          <h2 class="section-title">Portfolio</h2>
+          <p class="section-sub">Choose a category to explore.</p>
+          <div class="menu-grid">
+            <button class="menu-card" type="button" data-go="about">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6" /></svg>
+              <span>About Me</span>
+            </button>
+            <button class="menu-card" type="button" data-go="internships">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" /></svg>
+              <span>Internships</span>
+            </button>
+            <button class="menu-card" type="button" data-go="certificates">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="9" r="5" /><path d="M8.5 13.5L7 21l5-2.5L17 21l-1.5-7.5" /></svg>
+              <span>Certificates</span>
+            </button>
+            <button class="menu-card" type="button" data-go="projects">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v14H4z" /><path d="M4 10h16" /><path d="M9 10v9" /></svg>
+              <span>Projects</span>
+            </button>
+            <button class="menu-card" type="button" data-go="achievements">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.5 5.5L20 9.5l-4 4 1 6-5-2.8L7 19.5l1-6-4-4 5.5-1z" /></svg>
+              <span>Achievements</span>
+            </button>
+            <button class="menu-card" type="button" data-go="connect">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.4-7 10-7 10z" /></svg>
+              <span>Connect</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------------- ABOUT ---------------- -->
+      <section class="view" id="view-about" data-view="about" hidden>
+        <header class="topbar">
+          <button class="back" type="button" data-back>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7" /></svg>
+          </button>
+          <h2>About Me</h2>
+        </header>
+        <div class="page">
+          <div class="card">
+            <p class="desc" id="about-bio"></p>
+          </div>
+          <div class="card">
+            <h4 class="block-title">Education</h4>
+            <div id="about-education"></div>
+          </div>
+          <div class="card">
+            <h4 class="block-title">Skills</h4>
+            <div class="tags" id="about-skills"></div>
+          </div>
+          <div class="card">
+            <h4 class="block-title">Areas of Interest</h4>
+            <div class="tags" id="about-interests"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------------- INTERNSHIPS ---------------- -->
+      <section class="view" id="view-internships" data-view="internships" hidden>
+        <header class="topbar">
+          <button class="back" type="button" data-back>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7" /></svg>
+          </button>
+          <h2>Internships</h2>
+        </header>
+        <div class="page" id="internships-list"></div>
+      </section>
+
+      <!-- ---------------- CERTIFICATES ---------------- -->
+      <section class="view" id="view-certificates" data-view="certificates" hidden>
+        <header class="topbar">
+          <button class="back" type="button" data-back>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7" /></svg>
+          </button>
+          <h2>Certificates</h2>
+        </header>
+        <div class="page" id="certificates-list"></div>
+      </section>
+
+      <!-- ---------------- PROJECTS ---------------- -->
+      <section class="view" id="view-projects" data-view="projects" hidden>
+        <header class="topbar">
+          <button class="back" type="button" data-back>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7" /></svg>
+          </button>
+          <h2>Projects</h2>
+        </header>
+        <div class="page" id="projects-list"></div>
+      </section>
+
+      <!-- ---------------- ACHIEVEMENTS ---------------- -->
+      <section class="view" id="view-achievements" data-view="achievements" hidden>
+        <header class="topbar">
+          <button class="back" type="button" data-back>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7" /></svg>
+          </button>
+          <h2>Achievements</h2>
+        </header>
+        <div class="page" id="achievements-list"></div>
+      </section>
+
+      <!-- ---------------- CONNECT ---------------- -->
+      <section class="view" id="view-connect" data-view="connect" hidden>
+        <header class="topbar">
+          <button class="back" type="button" data-back>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7" /></svg>
+          </button>
+          <h2>Connect With Me</h2>
+        </header>
+        <div class="page">
+          <div class="card">
+            <p class="desc">I am active on LinkedIn — reach out any time.</p>
+            <a class="btn btn-linkedin btn-block" id="linkedin-btn" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5zM3 8.98h4v12H3zM9.5 8.98h3.8v1.64h.05a4.2 4.2 0 0 1 3.77-2.07c4.03 0 4.78 2.65 4.78 6.1v6.33h-4v-5.61c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.71h-4z" />
+              </svg>
+              Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------------- CONTACT ---------------- -->
+      <section class="view" id="view-contact" data-view="contact" hidden>
+        <header class="topbar">
+          <button class="back" type="button" data-back>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7" /></svg>
+          </button>
+          <h2>Contact</h2>
+        </header>
+        <div class="page">
+          <div class="card">
+            <div class="contact-row">
+              <div class="ico">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="5" width="18" height="14" rx="3" />
+                  <path d="M3 8l9 6 9-6" />
+                </svg>
+              </div>
+              <div>
+                <span class="label">Email</span>
+                <a id="contact-email" href="#"></a>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="ico">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5zM3 8.98h4v12H3zM9.5 8.98h3.8v1.64h.05a4.2 4.2 0 0 1 3.77-2.07c4.03 0 4.78 2.65 4.78 6.1v6.33h-4v-5.61c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.71h-4z" />
+                </svg>
+              </div>
+              <div>
+                <span class="label">LinkedIn</span>
+                <a id="contact-linkedin" href="#" target="_blank" rel="noopener"></a>
+              </div>
+            </div>
+            <div class="contact-row" id="phone-row" hidden>
+              <div class="ico">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 3h3l2 5-2 1a12 12 0 0 0 5 5l1-2 5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" />
+                </svg>
+              </div>
+              <div>
+                <span class="label">Phone</span>
+                <a id="contact-phone" href="#"></a>
+              </div>
+            </div>
+            <a class="btn btn-primary btn-block" id="connect-btn" href="#">Let's Connect</a>
+          </div>
+          <footer>© <span id="year"></span> <span id="footer-name"></span></footer>
+        </div>
+      </section>
+    </main>
+
+    <!-- ---------------- FIXED BOTTOM NAV ---------------- -->
+    <nav class="bottom-nav" aria-label="Primary">
+      <button type="button" data-go="home" class="active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" /></svg>
+        Home
+      </button>
+      <button type="button" data-go="about">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6" /></svg>
+        About
+      </button>
+      <button type="button" data-go="projects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" /></svg>
+        Projects
+      </button>
+      <button type="button" data-go="contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v14H4z" /><path d="M4 7l8 6 8-6" /></svg>
+        Contact
+      </button>
+    </nav>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
