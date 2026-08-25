@@ -116,11 +116,11 @@ const certificates = [
     link: "https://drive.google.com/file/d/1u9fv5m1O0YV7O9rJX6yYG1Jg-4KNTjJ_/view?usp=sharing",
   },
   {
-    name: "Data Analytics Essentials",
+    name: "Python Essentials",
     organization: "Cisco",
     date: "2026",
-    description: "Data Analytics Concepts",
-    link: "https://drive.google.com/file/d/14rSWCkprxQBY0RRxdnK5Dr20nVzbglYQ/view?usp=sharing",
+    description: "Python Concepts",
+    link: "https://drive.google.com/file/d/1qNgTM8tA8v9bGwHoAWKSGqgz096UOWpZ/view?usp=sharing",
   },
  {
     name: "Oracle Cloud Infrastructure Foundations I – English",
