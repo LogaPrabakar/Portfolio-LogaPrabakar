@@ -26,7 +26,7 @@ const portfolioData = {
 const internships = [
   {
     company: "Ethical EduFabrica Pvt.Ltd.",
-    role: "Web Developer Intern",
+    role: "Ethical Hacking",
     duration: "December 2024 - January 2025",
     description: "Learned about Firewall Concepts & Ethical Hacking.",
     skills: ["Firewall Concepts", "Ethical Hacking"],
