@@ -214,7 +214,7 @@ const achievements = [
     title: "Capture The Flag (CTF) Hackathon",
     organization: "Sri Eshwar College of Engineering",
     date: "2024",
-    description: "1stPlace in CTF Hackathon with cash prize of Rs 1500.",
+    description: "1st Place in CTF Hackathon with cash prize of Rs 1500.",
   },
    {
     title: "MatrixzCTF Hackathon",
