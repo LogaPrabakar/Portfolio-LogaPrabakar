@@ -129,6 +129,13 @@ const certificates = [
     description: "Oracle Cloud Infrastructure Foundations Concepts",
     link: "https://drive.google.com/file/d/1aBu6KqjxpKCkC_lSrVEe9SGUls2LuzWo/view?usp=sharing",
   },
+   {
+    name: "Introduction to Linux (LFS101)",
+    organization: "Linux Foundation",
+    date: "2026",
+    description: "Linux architecture, Foundational system administration",
+    link: "https://drive.google.com/file/d/1HjuJu4K9egof6puAdrSBZUqsiSXIUztV/view?usp=sharing",
+  },
 /* {
     name: "Cybersecurity Fundamentals",
     organization: "Organization Name",
