@@ -136,7 +136,22 @@ const certificates = [
     description: "Linux architecture, Foundational system administration",
     link: "https://drive.google.com/file/d/1HjuJu4K9egof6puAdrSBZUqsiSXIUztV/view?usp=sharing",
   },
-/* {
+ {
+    name: "Industrial Cybersecurity Essential",
+    organization: "Cisco",
+    date: "2026",
+    description: "Certificate description",
+    link: "https://drive.google.com/file/d/1S-bwYncoddyvYnDl6QKwqB6SzRtIeqUD/view?usp=sharing",
+  },
+   /* {
+    name: "Cybersecurity Fundamentals",
+    organization: "Organization Name",
+    date: "2026",
+    description: "Certificate description",
+    link: "GOOGLE_DRIVE_LINK",
+  },
+*/
+   /* {
     name: "Cybersecurity Fundamentals",
     organization: "Organization Name",
     date: "2026",
