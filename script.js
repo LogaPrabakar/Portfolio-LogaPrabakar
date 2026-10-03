@@ -140,7 +140,7 @@ const certificates = [
     name: "Industrial Cybersecurity Essential",
     organization: "Cisco",
     date: "2026",
-    description: "Certificate description",
+    description: "Learned OT security, industrial threats, risks, and defense",
     link: "https://drive.google.com/file/d/1S-bwYncoddyvYnDl6QKwqB6SzRtIeqUD/view?usp=sharing",
   },
    /* {
