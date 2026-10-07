@@ -167,7 +167,7 @@ const projects = [
     name: "CTF Platform",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6fsZne3wI1YMeXg1OoFfdJ3CfzQGSz_F8e7VwCGxtQy3CyhhyZH3oMwVl&s=10", // e.g. "/project-image.jpg" — leave "" to hide the image
     description: "Capture The Flag platform for cybersecurity competitions.",
-    technologies: ["MERN Stack"],
+    technologies: ["MERN Stack","CyberSecurity"],
    // github: "GITHUB_LINK",
    // live: "", // leave "" to hide the Live Demo button
   },
@@ -219,7 +219,33 @@ const projects = [
    // github: "GITHUB_LINK",
    // live: "", // leave "" to hide the Live Demo button
   },
-  /* {
+   {
+    name: "Epance Tracker",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfWTq_r_Hjhx5TEiBQpShxwezaHtVBm6Q1XGjc_kiYAneUCREhh69lOTRw&s=10", // e.g. "/project-image.jpg" — leave "" to hide the image
+    description: "Expance Tracker to manage our daily expances.",
+    technologies: ["MERN Stack"],
+   // github: "GITHUB_LINK",
+    live: "https://expance-trackerstonewave.vercel.app/", // leave "" to hide the Live Demo button
+  },
+    /* {
+    name: "Project Name",
+    image: "", // e.g. "/project-image.jpg" — leave "" to hide the image
+    description: "Short project description.",
+    technologies: ["Python", "Machine Learning", "NumPy", "Pandas"],
+   // github: "GITHUB_LINK",
+  //  live: "", // leave "" to hide the Live Demo button
+  },
+*/
+    /* {
+    name: "Project Name",
+    image: "", // e.g. "/project-image.jpg" — leave "" to hide the image
+    description: "Short project description.",
+    technologies: ["Python", "Machine Learning", "NumPy", "Pandas"],
+   // github: "GITHUB_LINK",
+    live: "", // leave "" to hide the Live Demo button
+  },
+*/
+    /* {
     name: "Project Name",
     image: "", // e.g. "/project-image.jpg" — leave "" to hide the image
     description: "Short project description.",
