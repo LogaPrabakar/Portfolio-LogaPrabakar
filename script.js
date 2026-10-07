@@ -225,7 +225,7 @@ const projects = [
     description: "Expance Tracker to manage our daily expances.",
     technologies: ["MERN Stack"],
    // github: "GITHUB_LINK",
-    live: "https://expance-trackerstonewave.vercel.app/", // leave "" to hide the Live Demo button
+   // live: "https://expance-trackerstonewave.vercel.app/", // leave "" to hide the Live Demo button
   },
     /* {
     name: "Project Name",
