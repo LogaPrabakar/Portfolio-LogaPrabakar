@@ -29,12 +29,12 @@ const portfolioData = {
 const researchPapers = [
   {
     title: "Keylogging in the Digital Age: Techniques, Threats and Countermeasures",
-    status: "Under Copyright", // "Published" | "Under Copyright" | "Under Processing"
+    status: "Published", // "Published" | "Under Copyright" | "Under Processing"
     authors: "Loga Prabakar V S",
     publisher: "Scitepress / International Conference on Cybersecurity",
     date: "2026",
     description: "Exploring keylogging techniques, ethical concerns, password attacks, and effective strategies for detecting and preventing data theft.",
-    link: "", // leave "" or paste paper / DOI URL
+    link: "https://www.scitepress.org/Papers/2025/139430/139430.pdf", // leave "" or paste paper / DOI URL
   },
   /*{
    title: "IoT-Based Wireless Attack Detection & Evil-Twin Countermeasure Architecture",
