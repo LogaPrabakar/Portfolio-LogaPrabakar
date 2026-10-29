@@ -132,8 +132,7 @@ a {
 
 .block-title {
   margin: 0 0 10px;
-  font-size: 0.76rem
-  ;
+  font-size: 0.76rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
@@ -282,6 +281,16 @@ a {
   color: #fff;
 }
 
+.btn-scholar {
+  background: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(66, 133, 244, 0.28);
+}
+
+.btn-scholar:active {
+  transform: translateY(1px) scale(0.97);
+}
+
 .btn-row {
   display: flex;
   gap: 10px;
@@ -414,6 +423,131 @@ a {
   border: 1px solid var(--border);
   margin-bottom: 14px;
   background: #0d1219;
+}
+
+/* ---------- Scholar & Research Section ---------- */
+.scholar-card {
+  background: linear-gradient(180deg, rgba(66, 133, 244, 0.12) 0%, var(--card-2) 100%);
+  border: 1px solid rgba(66, 133, 244, 0.28);
+  margin-bottom: 20px;
+}
+
+.scholar-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.scholar-ico {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(66, 133, 244, 0.2);
+  color: #6ba8ff;
+  border: 1px solid rgba(66, 133, 244, 0.3);
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
+
+.scholar-ico svg {
+  width: 24px;
+  height: 24px;
+}
+
+.scholar-header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 750;
+}
+
+.scholar-header p {
+  margin: 2px 0 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.research-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.research-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.research-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.research-top .meta {
+  margin: 0;
+}
+
+.research-title {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.research-authors {
+  margin: 4px 0 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* ---------- Status Badges ---------- */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.status-badge svg {
+  flex-shrink: 0;
+}
+
+.status-published {
+  background: rgba(61, 220, 151, 0.14);
+  color: #3ddc97;
+  border: 1px solid rgba(61, 220, 151, 0.32);
+}
+
+.status-copyright {
+  background: rgba(255, 171, 64, 0.14);
+  color: #ffab40;
+  border: 1px solid rgba(255, 171, 64, 0.35);
+}
+
+.status-processing {
+  background: rgba(74, 168, 255, 0.14);
+  color: #70b5ff;
+  border: 1px solid rgba(74, 168, 255, 0.35);
+}
+
+.status-review {
+  background: rgba(192, 132, 252, 0.14);
+  color: #c084fc;
+  border: 1px solid rgba(192, 132, 252, 0.35);
+}
+
+.status-default {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--muted);
+  border: 1px solid var(--border);
 }
 
 /* ---------- Contact rows ---------- */
@@ -568,7 +702,8 @@ footer {
     margin-inline: auto;
   }
 
-  .page[id$="-list"] {
+  .page[id$="-list"],
+  .research-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
@@ -576,7 +711,9 @@ footer {
   }
 
   .page[id$="-list"] .card,
-  .page[id$="-list"] .empty {
+  .page[id$="-list"] .empty,
+  .research-list .card,
+  .research-list .empty {
     margin-bottom: 0;
   }
 
