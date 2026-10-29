@@ -9,7 +9,7 @@ const portfolioData = {
   introduction:
     "I am passionate about Cybersecurity,Networking,Development,Technology and Building practical technology solutions",
   about:
-    "Secure Developer | Aspiring Cybersecurity Professional | Memeber of WiCys Student Chapter | Networking Enthusiast | MERN Stack Developer | Creative Thinker | Strong Team Planner & Builder.",
+    "Secure Developer | Aspiring Cybersecurity Professional | Cybersecurity Researcher (Student) | Memeber of WiCys Student Chapter | Networking Enthusiast | MERN Stack Developer | Creative Thinker | Strong Team Planner & Builder.",
   skills: ["Cybersecurity", "Networking", "Linux", "Git", "MERN Stack", "C", "Python"],
   education: {
     degree: "B.E. Electronics and Communication Engineering",
