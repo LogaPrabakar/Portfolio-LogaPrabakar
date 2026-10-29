@@ -32,7 +32,7 @@ const researchPapers = [
     status: "Published", // "Published" | "Under Copyright" | "Under Processing"
     authors: "Loga Prabakar V S",
     publisher: "Scitepress / International Conference on Cybersecurity",
-    date: "2026",
+    date: "2025",
     description: "Exploring keylogging techniques, ethical concerns, password attacks, and effective strategies for detecting and preventing data theft.",
     link: "https://www.scitepress.org/Papers/2025/139430/139430.pdf", // leave "" or paste paper / DOI URL
   },
