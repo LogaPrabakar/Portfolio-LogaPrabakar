@@ -36,7 +36,7 @@ const researchPapers = [
     description: "Exploring keylogging techniques, ethical concerns, password attacks, and effective strategies for detecting and preventing data theft.",
     link: "https://www.scitepress.org/Papers/2025/139430/139430.pdf", // leave "" or paste paper / DOI URL
   },
-  {
+  /*{
    title: "AI-Based Adaptive Artifact Prioritization for Anomaly Detection on Linux Systems",
    status: "Under Processing", // "Published" | "Under Copyright" | "Under Processing"
    authors: "Loga Prabakar V S",
@@ -44,7 +44,7 @@ const researchPapers = [
    date: "2026",
    description: "Developed an AI-driven adaptive artifact prioritization system to detect anomalies in Linux environments by intelligently analyzing and ranking system artifacts based on risk and behavioral patterns.",
    link: "",
- },
+ },*/
   /* {
     title: "Audio Steganography and LSB Concealment in Covert Communications",
     status: "Published", // "Published" | "Under Copyright" | "Under Processing"
