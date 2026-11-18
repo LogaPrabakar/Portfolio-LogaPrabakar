@@ -81,7 +81,7 @@ const internships = [
     duration: "June 2025 - August 2025",
     description: "Worked on Cybersecurity & Networking projects.",
     skills: ["CISCO Packet Tracer"],
-    logo: "https://img.logo.dev/cisco.com?token=live_6a1a28fd-6420-4492-aeb0-b297461d9de2&size=512&retina=true&format=png", // optional image path or URL
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmtXjd4LTl-V2hGzKKx99e0rhnHo9GOg_v7XEJB73SUALwu4qxVemax2c&s=10", // optional image path or URL
   },
   {
     company: "Prompt InfoTech",
