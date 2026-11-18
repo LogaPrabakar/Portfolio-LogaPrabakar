@@ -45,18 +45,8 @@ const researchPapers = [
    description: "Developed an AI-driven adaptive artifact prioritization system to detect anomalies in Linux environments by intelligently analyzing and ranking system artifacts based on risk and behavioral patterns.",
    link: "",
  },*/
-  /* {
-    title: "Audio Steganography and LSB Concealment in Covert Communications",
-    status: "Published", // "Published" | "Under Copyright" | "Under Processing"
-    authors: "Loga Prabakar V S",
-    publisher: "Cybersecurity Research Journal",
-    date: "2025",
-    description: "An empirical investigation into least significant bit audio encoding, psychoacoustic masking, and integrity verification against steganalysis.",
-    link: "https://scholar.google.com", // link to published paper or Google Scholar
-  },*/
-  /*
   // Template: Copy and paste below to add more research papers:
-  {
+ /* {
     title: "Your Research Paper Title",
     status: "Under Copyright", // Options: "Published", "Under Copyright", "Under Processing"
     authors: "Loga Prabakar V S",
