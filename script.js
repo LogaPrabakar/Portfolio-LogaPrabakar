@@ -2,6 +2,8 @@
    EDIT YOUR PORTFOLIO DATA HERE
    ======================================== */
 
+/*NOTE :    DRIVE LINK FORM =======================  cybersecurity & networking */ 
+
 const portfolioData = {
   name: "Loga Prabakar V S",
   title: "Cybersecurity Enthusiast | Developer",
@@ -178,6 +180,29 @@ const certificates = [
     description: "Learned OT security, industrial threats, risks, and defense",
     link: "https://drive.google.com/file/d/1S-bwYncoddyvYnDl6QKwqB6SzRtIeqUD/view?usp=sharing",
   },
+    {
+    name: "Computer Hardware Basics",
+    organization: "Cisco",
+    date: "2026",
+    description: "Learned computer hardware fundamentals, system configuration, hardware installation, and troubleshooting procedures.",
+    link: "https://drive.google.com/file/d/1HQC7_6dtuLxn3k3PCBMOmy5v9SsYWKb7/view?usp=sharing",
+  }, 
+   
+  /*  {
+    name: "Industrial Cybersecurity Essential",
+    organization: "Cisco",
+    date: "2026",
+    description: "Learned OT security, industrial threats, risks, and defense",
+    link: "https://drive.google.com/file/d/1S-bwYncoddyvYnDl6QKwqB6SzRtIeqUD/view?usp=sharing",
+  }, */
+   
+  /*  {
+    name: "Industrial Cybersecurity Essential",
+    organization: "Cisco",
+    date: "2026",
+    description: "Learned OT security, industrial threats, risks, and defense",
+    link: "https://drive.google.com/file/d/1S-bwYncoddyvYnDl6QKwqB6SzRtIeqUD/view?usp=sharing",
+  }, */
 ];
 
 const projects = [
